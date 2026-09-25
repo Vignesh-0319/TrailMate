@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TrailMateApp: App {
+    @State private var store = TrailStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
+                .environment(store)
         }
     }
 }
