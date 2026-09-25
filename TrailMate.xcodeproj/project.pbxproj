@@ -14,8 +14,6 @@
 		3F1ED96A30662979001B1CC6 /* Exceptions for "TrailMate" folder in "TrailMate" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Models/SortOption.swift,
-				Models/TrailFormatter.swift,
 				Views/Components/DetailRow.swift,
 				Views/Components/DifficultyLegend.swift,
 				Views/Screens/AboutScreen.swift,
