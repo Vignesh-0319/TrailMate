@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		3F1ED95030662915001B1CC6 /* TrailMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1ED95030662915001B1CC6 /* TrailMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TrailMate.app; path = "/Users/student/Desktop/TrailMate/build/Debug-iphoneos/TrailMate.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3F1ED96A30662979001B1CC6 /* Exceptions for "TrailMate" folder in "TrailMate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/SortOption.swift,
+				Models/TrailFormatter.swift,
+				Views/Components/DetailRow.swift,
+				Views/Components/DifficultyLegend.swift,
+				Views/Screens/AboutScreen.swift,
+				Views/Screens/HomeScreen.swift,
+				Views/Screens/RegionScreen.swift,
+				Views/Screens/TrailDetailScreen.swift,
+			);
+			target = 3F1ED94F30662915001B1CC6 /* TrailMate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3F1ED95230662915001B1CC6 /* TrailMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3F1ED96A30662979001B1CC6 /* Exceptions for "TrailMate" folder in "TrailMate" target */,
+			);
 			path = TrailMate;
 			sourceTree = "<group>";
 		};
@@ -31,16 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				3F1ED95230662915001B1CC6 /* TrailMate */,
-				3F1ED95130662915001B1CC6 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		3F1ED95130662915001B1CC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3F1ED95030662915001B1CC6 /* TrailMate.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +100,7 @@
 			mainGroup = 3F1ED94730662915001B1CC6;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3F1ED95130662915001B1CC6 /* Products */;
+			productRefGroup = 3F1ED94730662915001B1CC6;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
