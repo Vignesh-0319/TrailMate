@@ -10,25 +10,9 @@
 		3F1ED95030662915001B1CC6 /* TrailMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TrailMate.app; path = "/Users/student/Desktop/TrailMate/build/Debug-iphoneos/TrailMate.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3F1ED96A30662979001B1CC6 /* Exceptions for "TrailMate" folder in "TrailMate" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Views/Screens/AboutScreen.swift,
-				Views/Screens/HomeScreen.swift,
-				Views/Screens/RegionScreen.swift,
-				Views/Screens/TrailDetailScreen.swift,
-			);
-			target = 3F1ED94F30662915001B1CC6 /* TrailMate */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3F1ED95230662915001B1CC6 /* TrailMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3F1ED96A30662979001B1CC6 /* Exceptions for "TrailMate" folder in "TrailMate" target */,
-			);
 			path = TrailMate;
 			sourceTree = "<group>";
 		};

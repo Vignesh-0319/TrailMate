@@ -18,6 +18,7 @@ struct HomeScreen: View {
     var body: some View {
         NavigationStack(path: $path) {
             List {
+                // MARK: - Trails Section
                 Section {
                     ForEach(store.displayedTrails) { trail in
                         NavigationLink(value: trail) {
@@ -30,6 +31,7 @@ struct HomeScreen: View {
                     Text(store.summaryText)
                 }
                 
+                // MARK: - Safety Section
                 Section {
                     Text("Start early and carry at least two litres of water.")
                     Text("Tell someone your route before you leave.")
@@ -38,6 +40,7 @@ struct HomeScreen: View {
                     Text("Safety Basics")
                 }
                 
+                // MARK: - More / About Section
                 Section {
                     NavigationLink {
                         AboutScreen()
@@ -49,12 +52,14 @@ struct HomeScreen: View {
                 }
             }
             .navigationTitle("TrailMate")
+            // Navigation Destinations
             .navigationDestination(for: Trail.self) { trail in
                 TrailDetailScreen(trail: trail, path: $path)
             }
             .navigationDestination(for: Region.self) { region in
                 RegionScreen(region: region, path: $path)
             }
+            // Navigation Bar Toolbars
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
@@ -82,6 +87,8 @@ struct HomeScreen: View {
                         Image(systemName: "plus")
                     }
                 }
+                
+                // Bottom Bar Toolbars
                 ToolbarItem(placement: .bottomBar) {
                     Text(store.summaryText)
                         .font(.caption)
@@ -105,6 +112,7 @@ struct HomeScreen: View {
                 }
             }
             .toolbarBackground(.visible, for: .bottomBar)
+            // Sheets, Popovers & Alerts
             .sheet(isPresented: $showAddSheet) {
                 AddTrailSheet()
                     .presentationDetents([.medium, .large])
